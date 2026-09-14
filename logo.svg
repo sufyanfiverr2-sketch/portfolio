@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="msGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&amp;display=swap');
+      .logo-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 210px;
+        font-weight: 700;
+        font-variant-ligatures: normal;
+        font-feature-settings: "calt" 1;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .bracket { fill: #06b6d4; }
+      .ms { fill: url(#msGradient); }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#050a14"/>
+  <text x="500" y="250" class="logo-text">
+    <tspan class="bracket">&lt;</tspan><tspan class="ms">MS</tspan><tspan class="bracket">/&gt;</tspan>
+  </text>
+</svg>
