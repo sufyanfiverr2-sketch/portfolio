@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Sufyan | Long-Form Video Editor & Post-Production</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="video.css" />
+</head>
+<body>
+
+  <!-- Ambient Cinematic Glows -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span>
+      <span class="cinema-badge">EDITING</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#focus">Focus Areas</a></li>
+      <li><a href="#timeline">The Timeline</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#process">Workflow</a></li>
+      <li><a href="#contact">Inquiries</a></li>
+      <li><a href="index.html" class="nav-back-pill">← Tech Portfolio</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-rec"></span>
+        LONG-FORM VIDEO EDITOR &amp; POST-PRODUCTION
+      </div>
+      <h1 class="hero-title">
+        Sculpting Stories with <span class="gradient-text">Pacing, Color &amp; Sound.</span>
+      </h1>
+      <p class="hero-desc">
+        Specializing in long-form digital storytelling — video essays, documentary-style edits, tech breakdowns, and narrative pacing. 
+        I craft raw footage into compelling, high-retention visual journeys.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book Editing Project 🎬</a>
+        <a href="index.html" class="btn btn-ghost">← Main Tech Portfolio</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="stat-num">24 FPS</span>
+          <span class="stat-lbl">Cinematic Motion</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Long-Form Focused</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">4K UHD</span>
+          <span class="stat-lbl">Master Delivery</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Mock NLE Timeline Visual -->
+    <div class="hero-visual">
+      <div class="timeline-window glass-card">
+        <div class="tw-header">
+          <div class="tw-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="tw-title">Sufyan_Master_Cut_v3.prproj · 4K 23.976fps</span>
+          <span class="tw-timecode">00:18:42:12</span>
+        </div>
+
+        <!-- Timeline Tracks UI -->
+        <div class="timeline-body">
+          <!-- Playhead indicator -->
+          <div class="playhead"></div>
+
+          <!-- Video Track 3 -->
+          <div class="track-row">
+            <div class="track-label">V3 · FX</div>
+            <div class="track-lane">
+              <div class="clip clip-fx" style="left: 15%; width: 35%;">After Effects Infographic Motion</div>
+              <div class="clip clip-fx" style="left: 60%; width: 25%;">Lower Thirds &amp; Callouts</div>
+            </div>
+          </div>
+
+          <!-- Video Track 2 -->
+          <div class="track-row">
+            <div class="track-label">V2 · B-ROLL</div>
+            <div class="track-lane">
+              <div class="clip clip-broll" style="left: 5%; width: 28%;">Cinematic Archival Cutaway</div>
+              <div class="clip clip-broll" style="left: 45%; width: 40%;">Macro Studio &amp; Tech Footage</div>
+            </div>
+          </div>
+
+          <!-- Video Track 1 -->
+          <div class="track-row">
+            <div class="track-label">V1 · A-ROLL</div>
+            <div class="track-lane">
+              <div class="clip clip-aroll" style="left: 0%; width: 100%;">Master Narrative Cut · DaVinci Color Grade</div>
+            </div>
+          </div>
+
+          <!-- Audio Track 1 -->
+          <div class="track-row">
+            <div class="track-label">A1 · VOX</div>
+            <div class="track-lane">
+              <div class="clip clip-audio" style="left: 0%; width: 100%;">Studio Dialogue · Noise Cleanup &amp; EQ</div>
+            </div>
+          </div>
+
+          <!-- Audio Track 2 -->
+          <div class="track-row">
+            <div class="track-label">A2 · SFX</div>
+            <div class="track-lane">
+              <div class="clip clip-sfx" style="left: 12%; width: 20%;">Whoosh / Impact</div>
+              <div class="clip clip-sfx" style="left: 55%; width: 25%;">Foley &amp; Ambience</div>
+            </div>
+          </div>
+
+          <!-- Audio Track 3 -->
+          <div class="track-row">
+            <div class="track-label">A3 · SCORE</div>
+            <div class="track-lane">
+              <div class="clip clip-score" style="left: 0%; width: 85%;">Dynamic Cinematic Score (Ducked)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tw-footer">
+          <span>● SEQUENCE: MAIN_STORY_2026</span>
+          <span>AUDIO: -14 LUFS TARGET</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Focus Areas Section -->
+  <section class="section" id="focus">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Editing Specialization</p>
+        <h2 class="section-title">Long-Form Craftsmanship</h2>
+        <p class="section-subtitle">
+          Pacing a 20-minute video requires a completely different mindset than quick clips. 
+          Here is how I approach long-form visual architecture.
+        </p>
+      </div>
+
+      <div class="focus-grid">
+        <!-- Focus 1 -->
+        <div class="focus-card glass-card">
+          <div class="fc-icon">🎥</div>
+          <h3 class="fc-title">Narrative &amp; Video Essays</h3>
+          <p class="fc-desc">
+            Structuring deep-dive videos with compelling narrative arcs. Balancing pacing so viewers stay engaged through complex explanations without mental fatigue.
+          </p>
+          <ul class="fc-bullets">
+            <li>Story tension &amp; retention architecture</li>
+            <li>Elimination of awkward pauses &amp; dead air</li>
+            <li>Intentional breathers and pacing peaks</li>
+          </ul>
+        </div>
+
+        <!-- Focus 2 -->
+        <div class="focus-card glass-card">
+          <div class="fc-icon">🎨</div>
+          <h3 class="fc-title">Color Grading &amp; Mood</h3>
+          <p class="fc-desc">
+            Transforming flat log footage into deep, moody, film-grade imagery in DaVinci Resolve. Perfecting skin tones while giving the project a cohesive cinematic tone.
+          </p>
+          <ul class="fc-bullets">
+            <li>Log to Rec.709 color transformation</li>
+            <li>Skin-tone isolation &amp; consistency</li>
+            <li>Custom film curve emulation &amp; grain</li>
+          </ul>
+        </div>
+
+        <!-- Focus 3 -->
+        <div class="focus-card glass-card">
+          <div class="fc-icon">🎧</div>
+          <h3 class="fc-title">Immersive Soundscapes</h3>
+          <p class="fc-desc">
+            Sound is 50% of the viewing experience. I layer foley, room atmospheres, whooshes, and music ducking so audio feels alive, crisp, and intentional.
+          </p>
+          <ul class="fc-bullets">
+            <li>Dialogue isolation &amp; frequency cleanup</li>
+            <li>Tactile foley &amp; transition impacts</li>
+            <li>Dynamic audio ducking under speech</li>
+          </ul>
+        </div>
+
+        <!-- Focus 4 -->
+        <div class="focus-card glass-card">
+          <div class="fc-icon">🎞️</div>
+          <h3 class="fc-title">Visual Graphics &amp; B-Roll</h3>
+          <p class="fc-desc">
+            Clean, restrained motion design that clarifies ideas rather than distracting from them. Highlighting documents, maps, code snippets, and UI mockups.
+          </p>
+          <ul class="fc-bullets">
+            <li>Cinematic B-roll framing &amp; zooms</li>
+            <li>Document highlight &amp; paper textures</li>
+            <li>Subtle kinetic lower-thirds &amp; diagrams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Production Tools Section -->
+  <section class="section section-alt" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Creative Suite</p>
+        <h2 class="section-title">Post-Production Toolkit</h2>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card glass-card">
+          <div class="tool-logo">Pr</div>
+          <h4>Adobe Premiere Pro</h4>
+          <p>Primary NLE for long-form assembly, multi-cam synchronization, and precise cut timing.</p>
+        </div>
+
+        <div class="tool-card glass-card">
+          <div class="tool-logo">Dv</div>
+          <h4>DaVinci Resolve</h4>
+          <p>Color grading power house for node-based tone balancing, contrast curves, and look development.</p>
+        </div>
+
+        <div class="tool-card glass-card">
+          <div class="tool-logo">Ae</div>
+          <h4>After Effects</h4>
+          <p>Custom motion graphics, screen replacement, map animations, and visual polish.</p>
+        </div>
+
+        <div class="tool-card glass-card">
+          <div class="tool-logo">Au</div>
+          <h4>Audition &amp; iZotope</h4>
+          <p>Surgical noise removal, voice leveling, EQ balancing, and mastering for web delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Pipeline -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Execution Pipeline</p>
+        <h2 class="section-title">How I Edit a Video</h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="step-card glass-card">
+          <span class="step-num">01</span>
+          <h4>Ingestion &amp; Assembly</h4>
+          <p>Reviewing all footage, organizing bins, pulling best takes, and building the initial radio edit.</p>
+        </div>
+
+        <div class="step-card glass-card">
+          <span class="step-num">02</span>
+          <h4>Narrative Polish &amp; B-Roll</h4>
+          <p>Tightening pacing, layering context footage, and shaping the retention curve.</p>
+        </div>
+
+        <div class="step-card glass-card">
+          <span class="step-num">03</span>
+          <h4>Sound Design &amp; Foley</h4>
+          <p>Building auditory depth with sound effects, background ambience, and score blending.</p>
+        </div>
+
+        <div class="step-card glass-card">
+          <span class="step-num">04</span>
+          <h4>Color &amp; Master QC</h4>
+          <p>Final color pass, grain treatment, quality control checks, and 4K export.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Collaboration -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-box glass-card">
+        <div class="cb-header">
+          <p class="section-eyebrow">Have a Channel or Project?</p>
+          <h2>Let's Craft Your Next Long-Form Video</h2>
+          <p class="cb-sub">
+            Whether you need an editor for ongoing YouTube essays, documentary projects, or tech breakdowns, 
+            I'm open for selective video editing collaborations.
+          </p>
+        </div>
+
+        <div class="cb-actions">
+          <a href="mailto:sufyanfiverr2@gmail.com?subject=Video%20Editing%20Project%20Inquiry" class="btn btn-primary">
+            Email Me Regarding Video 📩
+          </a>
+          <a href="index.html" class="btn btn-ghost">
+            ← Return to Software Engineering Portfolio
+          </a>
+        </div>
+
+        <div class="cb-info">
+          <span>📧 Direct: <strong>sufyanfiverr2@gmail.com</strong></span>
+          <span>⚡ Location: Faisalabad / Topi (GIKI), Pakistan</span>
+          <span>🎬 Focus: Long-Form &amp; Documentary</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed &amp; Edited by <strong>Muhammad Sufyan</strong> 🎬</p>
+    <p class="footer-sub">
+      Long-Form Video Editor &amp; Software Engineering Undergraduate · GIKI Class of 2029
+    </p>
+    <a href="index.html" class="footer-back-link">← Switch to Tech &amp; Programming Portfolio</a>
+  </footer>
+
+  <script>
+    // Simple mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+</body>
+</html>
