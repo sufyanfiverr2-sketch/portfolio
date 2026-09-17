@@ -124,6 +124,27 @@ html, body {
   overflow-wrap: break-word;
 }
 
+/* ── VIDEO EDITING SECTION — keep inside ─────────── */
+.video-grid {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.video-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1.4rem 1.25rem;
+}
+
+.video-intro {
+  padding: 0 0.5rem;
+  font-size: 0.92rem;
+  margin-bottom: 2rem;
+}
+
 /* ── CONTACT SECTION — keep inside ───────────────── */
 .contact-card {
   max-width: 100%;
