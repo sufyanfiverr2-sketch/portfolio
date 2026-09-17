@@ -1,0 +1,155 @@
+/* ═══════════════════════════════════════════════════
+   MOBILE-ONLY FIXES
+   This file ONLY applies to screens <= 768px.
+   It does NOT affect the desktop layout at all.
+═══════════════════════════════════════════════════ */
+
+/* ── KILL HORIZONTAL SCROLL ─────────────────────── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Every section and container must stay inside the screen */
+.hero,
+.section,
+.container,
+.hero-content,
+.hero-visual,
+.about-grid,
+.skills-categories,
+.projects-grid,
+.contact-grid {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* ── HERO TITLE — prevent text from going off-screen ── */
+.hero-title {
+  font-size: clamp(1.7rem, 7vw, 2.5rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  padding: 0 0.25rem;
+}
+
+.gradient-text {
+  display: inline;
+}
+
+/* ── HERO DESCRIPTION — keep inside screen ────────── */
+.hero-desc {
+  font-size: 0.88rem;
+  padding: 0 0.5rem;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* ── HERO BADGE — wrap on small screens ──────────── */
+.hero-badge {
+  text-align: center;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+/* ── CODE CARD (sufyan.py) — FIT INSIDE PHONE ────── */
+.code-card {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.code-body {
+  padding: 1rem 0.75rem;
+  font-size: 0.68rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre;
+  word-break: normal;
+}
+
+/* Make the pre inside not push the card wider than screen */
+.code-body code {
+  display: block;
+  min-width: 0;
+}
+
+.hero-visual {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── SKILL CATEGORIES — keep text inside ──────────── */
+.skill-category {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.skill-name {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%;
+}
+
+.skill-category h3 {
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+/* ── TECH CLOUD — prevent overflow ───────────────── */
+.tech-cloud {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.25rem;
+}
+
+/* ── PROJECT CARDS — keep inside ──────────────────── */
+.project-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.project-desc {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+/* ── CONTACT SECTION — keep inside ───────────────── */
+.contact-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cc-value {
+  font-size: 0.82rem;
+  word-break: break-all;
+}
+
+.contact-form {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── ABOUT SECTION — keep tags inside ────────────── */
+.about-tags {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.about-text {
+  padding: 0 0.25rem;
+}
+
+/* ── FOOTER — keep inside ────────────────────────── */
+.footer {
+  max-width: 100vw;
+  overflow: hidden;
+}
