@@ -64,10 +64,13 @@ html, body {
 /* ── HERO DESCRIPTION — keep inside screen ────────── */
 .hero-desc {
   font-size: 0.88rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   word-break: normal;
   overflow-wrap: break-word;
   max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── CODE CARD (sufyan.py) — FIT INSIDE PHONE ────── */
