@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
     subject: `📬 New Portfolio Message from ${name}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <div style="background: linear-gradient(135deg, #7c3aed, #3b82f6); padding: 30px; border-radius: 12px 12px 0 0;">
+        <div style="background: linear-gradient(135deg, #000000, #333333); padding: 30px; border-radius: 12px 12px 0 0;">
           <h1 style="color: white; margin: 0; font-size: 24px;">📬 New Portfolio Message</h1>
         </div>
         <div style="background: #0f172a; padding: 30px; border-radius: 0 0 12px 12px; border: 1px solid #1e293b;">
@@ -55,7 +55,7 @@ module.exports = async (req, res) => {
             <tr>
               <td style="padding: 10px 0; color: #94a3b8;"><strong>Email:</strong></td>
               <td style="padding: 10px 0;">
-                <a href="mailto:${email}" style="color: #7c3aed;">${email}</a>
+                <a href="mailto:${email}" style="color: #000000;">${email}</a>
               </td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@ module.exports = async (req, res) => {
     subject: `Got your message! — Muhammad Sufyan`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <div style="background: linear-gradient(135deg, #7c3aed, #3b82f6); padding: 30px; border-radius: 12px 12px 0 0;">
+        <div style="background: linear-gradient(135deg, #000000, #333333); padding: 30px; border-radius: 12px 12px 0 0;">
           <h1 style="color: white; margin: 0; font-size: 24px;">&lt;MS/&gt;</h1>
           <p style="color: #c4b5fd; margin: 8px 0 0 0;">Muhammad Sufyan · Software Engineer</p>
         </div>
@@ -90,11 +90,11 @@ module.exports = async (req, res) => {
           </p>
           <p style="line-height: 1.7; color: #cbd5e1;">
             In the meantime, feel free to check out my work on 
-            <a href="https://github.com/sufyanfiverr2-sketch" style="color: #7c3aed;">GitHub</a> 
+            <a href="https://github.com/sufyanfiverr2-sketch" style="color: #000000;">GitHub</a> 
             or connect with me on 
-            <a href="https://www.linkedin.com/in/muhammad-sufyan-919677406/" style="color: #3b82f6;">LinkedIn</a>.
+            <a href="https://www.linkedin.com/in/muhammad-sufyan-919677406/" style="color: #333333;">LinkedIn</a>.
           </p>
-          <div style="margin-top: 24px; padding: 16px; background: #1e293b; border-radius: 8px; border-left: 3px solid #7c3aed;">
+          <div style="margin-top: 24px; padding: 16px; background: #1e293b; border-radius: 8px; border-left: 3px solid #000000;">
             <p style="margin: 0; color: #94a3b8; font-size: 14px;">Your message:</p>
             <p style="margin: 8px 0 0 0; color: #e2e8f0; font-style: italic;">"${message}"</p>
           </div>

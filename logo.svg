@@ -1,8 +1,8 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
   <defs>
     <linearGradient id="msGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#06b6d4" />
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a1a1aa" />
     </linearGradient>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&amp;display=swap');
@@ -15,7 +15,7 @@
         text-anchor: middle;
         dominant-baseline: central;
       }
-      .bracket { fill: #06b6d4; }
+      .bracket { fill: #a1a1aa; }
       .ms { fill: url(#msGradient); }
     </style>
   </defs>

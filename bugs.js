@@ -39,15 +39,15 @@
     return `
       <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- Antennae -->
-        <path d="M8 6L5 2M16 6L19 2" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M8 6L5 2M16 6L19 2" stroke="#d4d4d8" stroke-width="1.5" stroke-linecap="round"/>
         <!-- Legs -->
-        <path d="M4 10L1 9M4 14L1 15M4 18L1 20" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" class="bug-legs"/>
-        <path d="M20 10L23 9M20 14L23 15M20 18L23 20" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" class="bug-legs"/>
+        <path d="M4 10L1 9M4 14L1 15M4 18L1 20" stroke="#a1a1aa" stroke-width="1.5" stroke-linecap="round" class="bug-legs"/>
+        <path d="M20 10L23 9M20 14L23 15M20 18L23 20" stroke="#a1a1aa" stroke-width="1.5" stroke-linecap="round" class="bug-legs"/>
         <!-- Shell / Body -->
-        <ellipse cx="12" cy="14" rx="5.2" ry="6.2" fill="#7c3aed" stroke="#a78bfa" stroke-width="1"/>
-        <line x1="12" y1="8" x2="12" y2="20" stroke="#06b6d4" stroke-width="1"/>
+        <ellipse cx="12" cy="14" rx="5.2" ry="6.2" fill="#18181b" stroke="#71717a" stroke-width="1"/>
+        <line x1="12" y1="8" x2="12" y2="20" stroke="#a1a1aa" stroke-width="1"/>
         <!-- Head -->
-        <circle cx="12" cy="7" r="3.2" fill="#22c55e"/>
+        <circle cx="12" cy="7" r="3.2" fill="#d4d4d8"/>
         <!-- Glowing Eyes -->
         <circle cx="10.8" cy="6.3" r="0.9" fill="#ffffff"/>
         <circle cx="13.2" cy="6.3" r="0.9" fill="#ffffff"/>
@@ -183,7 +183,7 @@
 
   // ── Sparkle Burst Particles ───────────────────────
   function createBurst(x, y) {
-    const colors = ['#22c55e', '#06b6d4', '#a78bfa', '#fbbf24'];
+    const colors = ['#d4d4d8', '#a1a1aa', '#71717a', '#ffffff'];
     for (let i = 0; i < 6; i++) {
       const p = document.createElement('div');
       p.className = 'bug-particle';
