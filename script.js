@@ -84,9 +84,15 @@ window.addEventListener('scroll', () => {
 ═══════════════════════════════════════════════════ */
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
-navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open');
+});
 document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('open'));
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+  });
 });
 
 /* ═══════════════════════════════════════════════════
