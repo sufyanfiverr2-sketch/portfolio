@@ -158,19 +158,51 @@ document.querySelectorAll('.skill-category').forEach(el => barObserver.observe(e
 /* ═══════════════════════════════════════════════════
    CONTACT FORM
 ═══════════════════════════════════════════════════ */
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const note = document.getElementById('formNote');
   const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
+  const form = e.target;
+
+  // Get form data
+  const name    = form.querySelector('#name').value.trim();
+  const email   = form.querySelector('#email').value.trim();
+  const message = form.querySelector('#message').value.trim();
+
+  // UI: loading state
+  btn.textContent = 'Sending... ⏳';
   btn.disabled = true;
-  setTimeout(() => {
-    note.textContent = '✅ Message sent! I will get back to you soon.';
+  note.textContent = '';
+  note.style.color = '';
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok && data.success) {
+      // Success
+      note.textContent = '✅ Message sent! Check your inbox — I will reply within 24 hours.';
+      note.style.color = '#4ade80';
+      form.reset();
+    } else {
+      // Server returned an error
+      note.textContent = `❌ ${data.error || 'Something went wrong. Please try again.'}`;
+      note.style.color = '#f87171';
+    }
+  } catch (err) {
+    // Network error
+    note.textContent = '❌ Network error. Please email me directly at sufyanfiverr2@gmail.com';
+    note.style.color = '#f87171';
+  } finally {
     btn.textContent = 'Send Message 🚀';
     btn.disabled = false;
-    e.target.reset();
-    setTimeout(() => { note.textContent = ''; }, 4000);
-  }, 1500);
+    setTimeout(() => { note.textContent = ''; }, 6000);
+  }
 });
 
 /* ═══════════════════════════════════════════════════

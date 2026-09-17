@@ -1,0 +1,9 @@
+{
+  "name": "ms-portfolio",
+  "version": "1.0.0",
+  "description": "Muhammad Sufyan's Developer Portfolio",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
