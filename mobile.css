@@ -10,7 +10,8 @@ html, body {
   max-width: 100vw;
 }
 
-/* Every section and container must stay inside the screen */
+/* Every section and container must stay inside the screen
+   but NEVER set overflow on these — it creates scroll traps */
 .hero,
 .section,
 .container,
@@ -21,7 +22,6 @@ html, body {
 .projects-grid,
 .contact-grid {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 /* ── HERO TITLE — prevent text from going off-screen ── */
@@ -89,7 +89,6 @@ html, body {
 .skill-category {
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .skill-name {
@@ -116,7 +115,6 @@ html, body {
 .project-card {
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .project-desc {
@@ -128,7 +126,6 @@ html, body {
 .contact-card {
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .cc-value {
@@ -154,7 +151,12 @@ html, body {
 /* ── FOOTER — keep inside ────────────────────────── */
 .footer {
   max-width: 100vw;
-  overflow: hidden;
+}
+
+/* ── GLOBAL MOBILE SCROLL FIX ────────────────────── */
+/* Ensure vertical scrolling is never blocked on any element */
+*, *::before, *::after {
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ── BUG HUNTER MOBILE ADJUSTMENTS ───────────────── */
