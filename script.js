@@ -90,8 +90,11 @@ navToggle.addEventListener('click', () => {
 });
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.classList.remove('open');
+    const href = a.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+    }
   });
 });
 

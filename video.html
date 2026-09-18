@@ -425,8 +425,11 @@
     });
     document.querySelectorAll('.nav-links a').forEach(a => {
       a.addEventListener('click', () => {
-        links.classList.remove('open');
-        toggle.classList.remove('open');
+        const href = a.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+        }
       });
     });
 
