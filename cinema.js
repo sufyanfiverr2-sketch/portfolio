@@ -198,6 +198,8 @@
       if (this.isCollected) return;
       this.isCollected = true;
       this.el.classList.add('collected');
+      const svg = this.el.querySelector('svg');
+      if (svg) svg.style.transform = 'scale(1.8)';
 
       // Audio feedback
       playSound(this.type);
