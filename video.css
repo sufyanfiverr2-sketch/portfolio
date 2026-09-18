@@ -955,3 +955,190 @@ a {
     gap: 0.75rem;
   }
 }
+
+/* ═══════════════════════════════════════════════════
+   CINEMA INTERACTIVE EASTER EGG (2 Clapperboards + 2 DaVinci Logos)
+═══════════════════════════════════════════════════ */
+.cinema-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 85;
+  overflow: hidden;
+}
+
+.cinema-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: transform 0.12s ease, filter 0.2s ease;
+  z-index: 86;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+}
+
+.cinema-item:hover {
+  transform: scale(1.3) !important;
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.8));
+}
+
+.cinema-item.collected {
+  transform: scale(2) !important;
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Floating Badge Animation */
+.cinema-badge-float {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #000;
+  background: linear-gradient(135deg, #d4af37, #f59e0b);
+  border-radius: 99px;
+  padding: 0.25rem 0.65rem;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+  pointer-events: none;
+  z-index: 95;
+  white-space: nowrap;
+  animation: floatUpFade 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes floatUpFade {
+  0%   { opacity: 0; transform: translate(-50%, -20%) scale(0.7); }
+  25%  { opacity: 1; transform: translate(-50%, -80%) scale(1.05); }
+  100% { opacity: 0; transform: translate(-50%, -160%) scale(0.95); }
+}
+
+/* Golden Particles */
+.cinema-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 90;
+  animation: cinemaParticleFade 0.65s cubic-bezier(0, 0.8, 0.5, 1) forwards;
+}
+
+@keyframes cinemaParticleFade {
+  0%   { transform: translate(0, 0) scale(1.2); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(0); opacity: 0; }
+}
+
+/* Cinema HUD (Bottom-left corner) */
+.cinema-hud {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(10, 10, 12, 0.88);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 99px;
+  padding: 0.45rem 0.95rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.cinema-hud.pulse {
+  transform: scale(1.08);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+}
+
+.cinema-hud.all-mastered {
+  border-color: #22c55e;
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.3);
+}
+
+.cinema-hud-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.cinema-hud-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cinema-hud-title {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.cinema-hud-count {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+/* Victory Toast */
+.cinema-win-toast {
+  position: fixed;
+  top: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.96), rgba(170, 140, 44, 0.96));
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.4rem;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 30px rgba(212, 175, 55, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.cinema-win-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 768px) {
+  .cinema-hud {
+    bottom: 0.85rem;
+    left: 0.85rem;
+    padding: 0.35rem 0.75rem;
+    gap: 0.45rem;
+  }
+  .cinema-hud-icon { font-size: 0.95rem; }
+  .cinema-hud-title { font-size: 0.55rem; }
+  .cinema-hud-count { font-size: 0.7rem; }
+  .cinema-item { width: 32px; height: 32px; }
+  .cinema-win-toast {
+    width: 90%;
+    max-width: 320px;
+    font-size: 0.75rem;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    white-space: normal;
+  }
+}
