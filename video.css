@@ -52,13 +52,6 @@ a {
 /* ── AMBIENT CINEMATIC LIGHTING ─────────────────── */
 .ambient-glow {
   position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(120px);
-}
-.ambient-glow {
-  position: absolute;
   width: 60vw;
   height: 60vw;
   max-width: 800px;
@@ -67,9 +60,10 @@ a {
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
+  filter: blur(120px);
 }
-.glow-top { top: -20%; left: -10%; }
-.glow-bottom { bottom: -20%; right: -10%; background: radial-gradient(circle, rgba(170, 140, 44, 0.05) 0%, transparent 60%); }
+.glow-top { top: -10%; left: -10%; }
+.glow-bottom { bottom: -10%; right: -10%; background: radial-gradient(circle, rgba(170, 140, 44, 0.05) 0%, transparent 60%); }
 
 /* ── GLASS CARD ──────────────────────────────────── */
 .glass-card {
