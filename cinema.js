@@ -72,21 +72,21 @@
     return `
       <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#d4af37" flood-opacity="0.4"/>
+          <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ef4444" flood-opacity="0.4"/>
         </filter>
         <!-- Board base -->
-        <rect x="3" y="11" width="26" height="17" rx="3" fill="#111111" stroke="#d4af37" stroke-width="1.5" filter="url(#goldGlow)"/>
+        <rect x="3" y="11" width="26" height="17" rx="3" fill="#111111" stroke="#ef4444" stroke-width="1.5" filter="url(#goldGlow)"/>
         <!-- Chevron stripes on base -->
-        <line x1="8" y1="12" x2="13" y2="17" stroke="#aa8c2c" stroke-width="1.5"/>
-        <line x1="16" y1="12" x2="21" y2="17" stroke="#aa8c2c" stroke-width="1.5"/>
-        <line x1="24" y1="12" x2="28" y2="16" stroke="#aa8c2c" stroke-width="1.5"/>
+        <line x1="8" y1="12" x2="13" y2="17" stroke="#dc2626" stroke-width="1.5"/>
+        <line x1="16" y1="12" x2="21" y2="17" stroke="#dc2626" stroke-width="1.5"/>
+        <line x1="24" y1="12" x2="28" y2="16" stroke="#dc2626" stroke-width="1.5"/>
         <!-- Text lines -->
-        <line x1="7" y1="21" x2="19" y2="21" stroke="#fdfbf7" stroke-width="1.2" stroke-linecap="round"/>
-        <line x1="7" y1="24" x2="15" y2="24" stroke="#a39161" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="7" y1="21" x2="19" y2="21" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="7" y1="24" x2="15" y2="24" stroke="#a1a1aa" stroke-width="1.2" stroke-linecap="round"/>
         <!-- Hinged top clapstick (angled up slightly) -->
         <g transform="rotate(-12 3 11)">
-          <rect x="3" y="5" width="26" height="6" rx="2" fill="#1a1a1a" stroke="#d4af37" stroke-width="1.5"/>
-          <path d="M7 5L10 11M14 5L17 11M21 5L24 11" stroke="#d4af37" stroke-width="1.8"/>
+          <rect x="3" y="5" width="26" height="6" rx="2" fill="#1a1a1a" stroke="#ef4444" stroke-width="1.5"/>
+          <path d="M7 5L10 11M14 5L17 11M21 5L24 11" stroke="#ef4444" stroke-width="1.8"/>
         </g>
       </svg>
     `;
@@ -96,14 +96,14 @@
     return `
       <svg viewBox="0 0 100 100" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <filter id="dvGlow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#d4af37" flood-opacity="0.5"/>
+          <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ef4444" flood-opacity="0.5"/>
         </filter>
-        <circle cx="50" cy="50" r="46" fill="#0d0d0f" stroke="#d4af37" stroke-width="3" filter="url(#dvGlow)"/>
+        <circle cx="50" cy="50" r="46" fill="#0d0d0f" stroke="#ef4444" stroke-width="3" filter="url(#dvGlow)"/>
         <!-- 3 DaVinci Resolve color wheels / petals -->
-        <path d="M50 50 L50 14 A36 36 0 0 1 81 68 Z" fill="#d4af37" opacity="0.95"/>
-        <path d="M50 50 L81 68 A36 36 0 0 1 19 68 Z" fill="#aa8c2c" opacity="0.95"/>
-        <path d="M50 50 L19 68 A36 36 0 0 1 50 14 Z" fill="#f59e0b" opacity="0.95"/>
-        <circle cx="50" cy="50" r="11" fill="#050505" stroke="#d4af37" stroke-width="2.5"/>
+        <path d="M50 50 L50 14 A36 36 0 0 1 81 68 Z" fill="#ef4444" opacity="0.95"/>
+        <path d="M50 50 L81 68 A36 36 0 0 1 19 68 Z" fill="#dc2626" opacity="0.95"/>
+        <path d="M50 50 L19 68 A36 36 0 0 1 50 14 Z" fill="#f87171" opacity="0.95"/>
+        <circle cx="50" cy="50" r="11" fill="#050505" stroke="#ef4444" stroke-width="2.5"/>
       </svg>
     `;
   }
@@ -249,7 +249,7 @@
 
   // ── Golden Embers Burst ───────────────────────────
   function createGoldBurst(x, y) {
-    const colors = ['#d4af37', '#f59e0b', '#aa8c2c', '#ffffff'];
+    const colors = ['#ef4444', '#f87171', '#dc2626', '#ffffff'];
     for (let i = 0; i < 8; i++) {
       const p = document.createElement('div');
       p.className = 'cinema-particle';
